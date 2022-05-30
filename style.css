@@ -50,7 +50,7 @@ h1 {
   width: fit-content;
 }
 
-a::before {
+.lenteles::before {
   content: "";
   background-color: rgb(78, 96, 105);
   opacity: 0.3;
@@ -63,7 +63,7 @@ a::before {
   transition: all 0.5s ease-out;
 }
 
-.item:hover a::before {
+.item:hover .lenteles::before {
   animation: slideLeft 1s ease-out;
   width: 0;
   height: 0;
@@ -80,4 +80,8 @@ a::before {
 .forma {
   display: flex;
   flex-direction: column;
+}
+footer {
+  background-color: #f6f6f6;
+  padding: 5em 0 3em 0;
 }
