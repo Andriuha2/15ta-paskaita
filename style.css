@@ -2,21 +2,27 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 img {
+  padding: 1rem;
   width: 150px;
   height: 100px;
 }
 
-@media screen and (min-width: 600px) {
+.text {
+  color: rgb(140, 140, 140);
 }
+main {
+  display: block;
+  align-items: ;
+}
+
 .conteiner {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .vidus {
   font-weight: bold;
-  color: rgb(111, 111, 111);
+  color: rgb(255, 255, 255);
 }
 
 .image {
@@ -31,11 +37,16 @@ img {
   transition: all 0.5s ease;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  height: 50%;
   margin-top: 50px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.vidus {
+
+@media screen and (max-width: 600px) {
+  .conteiner {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 a {
@@ -44,9 +55,9 @@ a {
   cursor: pointer;
 }
 
-h1 {
+.first {
   margin-bottom: 1rem;
-  padding: 0 2rem 1rem 0;
+  padding: 0rem 2rem 1rem 1rem;
   width: fit-content;
 }
 
@@ -77,11 +88,27 @@ h1 {
   padding: 0.5rem;
 }
 
+@media screen and (min-width: 600px) {
+  .pabaiga {
+  }
+}
+
 .forma {
   display: flex;
   flex-direction: column;
+  max-width: 600px;
 }
 footer {
   background-color: #f6f6f6;
-  padding: 5em 0 3em 0;
+  padding: 5em 4rem 3em 4rem;
+  margin: 0 auto;
+}
+
+button {
+  background-color: rgb(183, 187, 189);
+  padding: 1rem;
+  border-radius: 5px;
+}
+p {
+  color: rgb(78, 96, 105);
 }
